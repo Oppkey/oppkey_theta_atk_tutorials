@@ -37,7 +37,7 @@ class ThetaApp extends StatelessWidget {
                 flex: 5,
               ),
               Expanded(
-                flex: 5,
+                flex: 2,
                 // ListView is scrollable
                 child: ListView(
                   controller: ScrollController(),
