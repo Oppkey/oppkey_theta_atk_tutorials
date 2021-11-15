@@ -41,11 +41,16 @@ class ThetaApp extends StatelessWidget {
                 // ListView is scrollable
                 child: ListView(
                   controller: ScrollController(),
-                  children: const [
+                  children: [
                     // begin button list
-                    InfoButton(),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: const [
+                        InfoButton(),
+                      ],
+                    ),
                     // SizedBox is used to add spacing between buttons
-                    SizedBox(
+                    const SizedBox(
                       height: 10,
                     ),
 
@@ -55,11 +60,21 @@ class ThetaApp extends StatelessWidget {
                     // https://oppkey.github.io/oppkey_thetaf/
                     //
 
-                    StateButton(),
-                    SizedBox(
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: const [
+                        StateButton(),
+                      ],
+                    ),
+                    const SizedBox(
                       height: 10,
                     ),
-                    TakePictureButton(),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: const [
+                        TakePictureButton(),
+                      ],
+                    ),
                     // end button list
                     // Do not put buttons below this line
                   ],
