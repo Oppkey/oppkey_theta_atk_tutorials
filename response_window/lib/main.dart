@@ -27,9 +27,8 @@ class ThetaApp extends StatelessWidget {
               const SizedBox(
                 height: 20,
               ),
-              // use ResponseWindow from thetaf for text output
-              // from the camera.  Example: InfoButton, StateButton
-              const ResponseWindow(
+              // use ThumbWindow to show thumbs
+              const ThumbWindow(
                 // flex is a size ratio.  The ResponseWindow and the
                 // button section will be in a 5:5 ratio. The space
                 // allocated to the buttons and the top window will be
@@ -48,7 +47,16 @@ class ThetaApp extends StatelessWidget {
                     SizedBox(
                       height: 10,
                     ),
-
+                    StateButton(),
+                    // SizedBox is used to add spacing between buttons
+                    SizedBox(
+                      height: 10,
+                    ),
+                    TakePictureButton(),
+                    // SizedBox is used to add spacing between buttons
+                    SizedBox(
+                      height: 10,
+                    ),
                     // add additional buttons here
                     // more information https://oppkey.github.io/oppkey_theta_atk/
                     // API docuementation, including list of buttons:
